@@ -2,34 +2,166 @@
 <html>
 <head>
     <title>Joesal's Cricket World</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #e8f5e9;
+        }
+
+        .home-header {
+            background: linear-gradient(135deg, #064d28, #159447);
+            color: white;
+            text-align: center;
+            padding: 65px 15px;
+            border-radius: 0 0 30px 30px;
+        }
+
+        .home-header h1 {
+            font-size: 42px;
+            margin: 10px 0;
+            letter-spacing: 2px;
+        }
+
+        .home-header p {
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        .cricket-ball {
+            font-size: 55px;
+        }
+
+        .home-title {
+            text-align: center;
+            color: #075b2c;
+            margin: 35px 10px 20px;
+        }
+
+        .home-links {
+            max-width: 950px;
+            margin: auto;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .home-links a {
+            background-color: white;
+            color: #075b2c;
+            text-decoration: none;
+            text-align: center;
+            padding: 28px 12px;
+            border-radius: 12px;
+            border: 1px solid #c8e6c9;
+            box-shadow: 0 3px 8px #00000015;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .home-links a:hover {
+            background-color: #dcedc8;
+            transform: translateY(-4px);
+        }
+
+        .home-links span {
+            display: block;
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .home-links a:last-child {
+            grid-column: 1 / 3;
+        }
+
+        .home-footer {
+            background-color: #064d28;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 35px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .home-header {
+                padding: 45px 10px;
+            }
+
+            .home-header h1 {
+                font-size: 28px;
+            }
+
+            .home-header p {
+                font-size: 15px;
+            }
+
+            .home-links {
+                grid-template-columns: 1fr;
+                gap: 13px;
+            }
+
+            .home-links a {
+                padding: 22px;
+                font-size: 16px;
+            }
+
+            .home-links a:last-child {
+                grid-column: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>JOESAL'S CRICKET WORLD</h1>
-    <p>Welcome to the World of Cricket!</p>
-</header>
+    <header class="home-header">
+        <div class="cricket-ball">🏏</div>
+        <h1>JOESAL'S CRICKET WORLD</h1>
+        <p>THE SPIRIT OF CRICKET</p>
+    </header>
 
-<nav>
-    <a href="players.html">Player Table</a>
-    <a href="rules.html">Cricket Rules</a>
-    <a href="gallery.html">Cricket Gallery</a>
-    <a href="legends.html">Cricket Legends</a>
-    <a href="booking.html">Book Tickets</a>
-</nav>
+    <h2 class="home-title">EXPLORE THE WORLD</h2>
 
-<main style="text-align:center;">
-    <h2>Welcome to Cricket World</h2>
-    <p>Explore players, rules, pictures and cricket legends.</p>
-    <p>Select any link above to visit its page.</p>
-</main>
+    <div class="home-links">
 
-<footer>
-    <p>Joesal's Cricket World</p>
-</footer>
+        <a href="players.html">
+            <span>🏆</span>
+            Player Table
+        </a>
+
+        <a href="rules.html">
+            <span>📋</span>
+            Cricket Rules
+        </a>
+
+        <a href="gallery.html">
+            <span>🏏</span>
+            Cricket Gallery
+        </a>
+
+        <a href="legends.html">
+            <span>⭐</span>
+            Cricket Legends
+        </a>
+
+        <a href="booking.html">
+            <span>🎟️</span>
+            Book Match Tickets
+        </a>
+
+    </div>
+
+    <footer class="home-footer">
+        <p>JOESAL'S CRICKET WORLD</p>
+    </footer>
 
 </body>
 </html>
